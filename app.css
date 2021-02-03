@@ -8239,6 +8239,48 @@ ul.social-list .fill-true{
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .block-summit--teachers {
+        text-align: center;
+    }
+    .teacher-card__desc {
+        text-align: left;
+        font-size:1.3em;
+    }
+    .teacher-card__title {
+        font-size: 1.3em;
+        margin-bottom: .4375em;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+    .teacher__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .teacher-card {
+        display: flex;
+        max-width: 41.625em;
+        margin-bottom: 40px;
+    }
+    .teacher-card__desc {
+        text-align: left;
+        font-size:1.9em;
+    }
+    .teacher-card__title {
+        font-size: 1.9em;
+        margin-bottom: .4375em;
+        text-align: left;
+    }
+    .teacher-card__subject {
+        font-size: 1.6em;
+        opacity: 0.7;
+    }
+}
+
 @media screen and (max-width: 620px) {
     .whatLearn__list {
         display: block;
