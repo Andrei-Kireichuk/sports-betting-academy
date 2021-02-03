@@ -8263,7 +8263,7 @@ ul.social-list .fill-true{
     }
     .teacher-card {
         display: flex;
-        max-width: 41.625em;
+        max-width: 54em;
         margin-bottom: 40px;
     }
     .teacher-card__desc {
@@ -8298,6 +8298,19 @@ ul.social-list .fill-true{
     }
     .whatLearn__title {
         font-size: 12px;
+    }
+    .teacher-card__desc {
+        text-align: left;
+        font-size:2.5em;
+    }
+    .teacher-card__title {
+        font-size: 2.5em;
+        margin-bottom: .4375em;
+        text-align: left;
+    }
+    .teacher-card__subject {
+        font-size: 2.2em;
+        opacity: 0.7;
     }
 }
 
