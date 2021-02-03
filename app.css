@@ -1119,16 +1119,6 @@ h1,h2,h3,h4,h5,h6,p{
     padding-left: 2vw;
 }
 
-@-o-viewport {
-    orientation: portrait;
-}
-@-ms-viewport {
-    orientation: portrait;
-}
-@-webkit-viewport {
-    orientation: portrait;
-}
-
 @media (max-width:768px){
     .title-sub-main{
         font-size:2.25em;
@@ -4499,7 +4489,7 @@ ul.social-list .fill-true{
     background:none
 }
 @media (-ms-high-contrast:active),(-ms-high-contrast:none){
-    >:not(.popup){
+    :not(.popup){
         filter:none
     }
     .popup{
@@ -5421,7 +5411,7 @@ ul.social-list .fill-true{
 }
 .whatLearn__title{
     width:100%;
-    margin-bottom:3.4375em
+    margin-bottom:3.4375em;
 }
 .whatLearn__list{
     display:flex;
@@ -5439,6 +5429,12 @@ ul.social-list .fill-true{
     padding-bottom:1.875em;
     line-height:1.25em
 }
+.whatLearn__item-title3{
+    position:relative;
+    display:block;
+    padding-bottom:1.875em;
+    line-height:1.25em
+}
 .whatLearn__item-title:before{
     content:"";
     position:absolute;
@@ -5450,9 +5446,26 @@ ul.social-list .fill-true{
     background-repeat:no-repeat;
     background-position:50% 50%
 }
+.whatLearn__item-title3:before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:-1.5625em;
+    top:-.625em;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-position:50% 50%
+}
+
+
 .whatLearn__item-title.item-big:before{
     background-image:url("learn_el_big.png")
 }
+.whatLearn__item-title3.item-big3:before{
+    background-image:url("learn_el_big.png")
+}
+
 .whatLearn__item-title.item-sm:before{
     background-image:url("learn_el_sm.png")
 }
@@ -5833,7 +5846,7 @@ ul.social-list .fill-true{
 .line__title:after{
     margin-bottom:1.75em;
     width:49.75em;
-    height:6px
+    height:0.5em;
 }
 .line__title--center:after{
     left:-999px;
@@ -7586,12 +7599,12 @@ ul.social-list .fill-true{
 .test-task-q-btn-block{
     margin-top:2.5em
 }
-@media screen and (768px){
+/*@media screen and (768px){
     .test-task-q-option:hover{
         background:#fff;
         box-shadow:none
     }
-}
+}*/
 .test-task-result__title{
     display:inline-block;
     position:relative
@@ -8183,4 +8196,71 @@ ul.social-list .fill-true{
 }
 .vue-slider-dot-tooltip-show .vue-slider-dot-tooltip-inner,.vue-slider-dot:hover .vue-slider-dot-tooltip .vue-slider-dot-tooltip-inner{
     transform:scale(1)
+}
+
+
+@media screen and (max-width: 768px) {
+    .whatLearn__title {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .whatLearn__list {
+        justify-content: space-around;
+    }
+
+    .whatLearn__item {
+        width: 28em;
+        padding-bottom: 0em;
+    }
+
+    .whatLearn__item-title {
+        padding-left: 5px;
+        font-size: 16px;
+        padding-bottom: 0.8em;
+        
+    }
+
+    .whatLearn__item-title::before {
+        padding-bottom: 1em;
+        
+    }
+    .whatLearn__item-title3 {
+        padding-left: 5px;
+        font-size: 16px;
+    }
+
+    .whatLearn__item-title3.item-big3:before {
+        background-position: bottom;
+        top: -1.5em;
+    }
+    .text-smm13 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .whatLearn__list {
+        display: block;
+        margin: 0 auto;
+    }
+    .whatLearn__item {
+        width: 54em;
+    }
+    .text-smm13 {
+        font-size: 14px;
+        
+    }
+    .whatLearn__item-text {
+        padding-top: 10px;
+    }
+    .whatLearn__title {
+        font-size: 12px;
+    }
+}
+
+@media screen and(max-width: 460px) {
+    .whatLearn__title {
+        font-size: 9px;
+    }
 }
