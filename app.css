@@ -1054,6 +1054,11 @@ textarea{
     width:inherit;
     height:inherit
 }
+
+.block-title--begin {
+    font-size: 2em;
+    font-weight: 800;
+}
 .disable{
     pointer-events:none
 }
@@ -6259,7 +6264,6 @@ ul.social-list .fill-true{
     font-size:1em
 }
 .teacher-card__desc span{
-    font-size:.8125em;
     line-height:1.32em
 }
 .teacher-card__desc--medium span{
@@ -6337,7 +6341,7 @@ ul.social-list .fill-true{
 }
 .whyYouShould{
     position:relative;
-    padding-top:5em
+    padding-top:0.5em
 }
 .whyYouShould__back{
     position:absolute;
@@ -6380,7 +6384,7 @@ ul.social-list .fill-true{
     z-index:2
 }
 .whyYouShould__info{
-    margin-top:11.5625em;
+    margin-top:1.5em;
     max-width:50%
 }
 .whyYouShould__container{
@@ -6428,12 +6432,7 @@ ul.social-list .fill-true{
     padding-top:6.125em;
     padding-bottom:3.75em
 }
-.mobile .whyYouShould__info{
-    max-width:none;
-    position:relative;
-    z-index:3;
-    width:100%;
-    margin-top:4.0625em
+
 }
 .mobile .whyYouShould__back{
     width:54.0625em;
@@ -8245,6 +8244,14 @@ ul.social-list .fill-true{
         left: -1000%;
     }
 
+    .whyYouShould__tel{
+        position:relative;
+        width:23.125em;
+        margin-left:9.25em;
+        margin-top:7.2125em;
+        left: -1000%
+    }
+
     .whyYouShould__neon-line {
         position: absolute;
         width: 13.75em;
@@ -8256,9 +8263,36 @@ ul.social-list .fill-true{
     .whyYouShould__title {
         margin-bottom: 4.1875em;
     }
+    .registration__desc {
+        font-size: 1em;
+    }
+
+    .text-lg,.text-lg22{
+        font-size: 2em
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .soc-block-auth__item {
+        min-width: 12.875em;
+        height: 4.563em;
+    }
+
+    .text-smm14, .vue-slider-ltr .vue-slider-mark-label {
+        font-size: 1.3em;
+    }
+    
+    .block-title--mob{
+        margin-top: 30px;
+    }
+    .text-lg22 {
+        font-size: 2.5em;
+    }
+    
+    .registration__desc {
+        font-size: 1.5em;
+    }
+    
     .block-summit--teachers {
         text-align: center;
     }
@@ -8266,6 +8300,7 @@ ul.social-list .fill-true{
         text-align: left;
         font-size:1.3em;
     }
+
     .teacher-card__title {
         font-size: 1.3em;
         margin-bottom: .4375em;
@@ -8281,7 +8316,7 @@ ul.social-list .fill-true{
     }
 
     .whyYouShould__info {
-        max-width: 55%;
+        max-width: 100%;
     }
 
     .title-sub-main {
@@ -8291,9 +8326,23 @@ ul.social-list .fill-true{
     .whyYouShould__text {
         font-size: 1.7em;
     }
+    .block-title--begin {
+        font-size: 3em;
+        font-weight: 800;
+    }
 }
 
 @media screen and (max-width: 786px) {
+    .registration__check {
+        margin-top: 3.938em;
+        margin-bottom: 5em;
+    }
+
+    .soc-block-auth__item {
+        min-width: 14.875em;
+        height: 4.563em;
+    }
+    
     .teacher__container {
         display: flex;
         flex-direction: column;
@@ -8324,6 +8373,19 @@ ul.social-list .fill-true{
 }
 
 @media screen and (max-width: 620px) {
+    .text-smm14, .vue-slider-ltr .vue-slider-mark-label {
+        font-size: 1.7em;
+    }
+    
+    
+    .registration__desc {
+        font-size: 2em;
+    }
+
+    .text-lg,.text-lg22 {
+        font-size: 3em;
+    }
+    
     .whatLearn__list {
         display: block;
         margin: 0 auto;
@@ -8343,10 +8405,10 @@ ul.social-list .fill-true{
     }
     .teacher-card__desc {
         text-align: left;
-        font-size:2.5em;
+        font-size: 14px;
     }
     .teacher-card__title {
-        font-size: 2.5em;
+        font-size: 16px;
         margin-bottom: .4375em;
         text-align: left;
     }
@@ -8359,10 +8421,40 @@ ul.social-list .fill-true{
         margin-bottom: 50px;
         font-size: 3em;
     }
+    .whyYouShould__text {
+        font-size: 14px;
+        text-shadow: 1px 1px 2px #010810;
+    }
+
+    .title-sub-main {
+        font-size: 16px;
+        text-shadow: 1px 1px 2px #010810;
+    }
     
+    .block-title--begin {
+        font-size: 4em;
+        font-weight: 800;
+    }
 }
 
 @media screen and(max-width: 460px) {
+    .text-smm14, .vue-slider-ltr .vue-slider-mark-label {
+        font-size: 2em;
+    }
+    
+    .soc-block-auth__item {
+        min-width: 20.875em;
+        height: 5.563em;
+    }
+    
+    .registration__desc {
+        font-size: 3em;
+    }
+
+    .text-lg,.text-lg22{
+        font-size: 3.5em
+    }
+    
     .whatLearn__title {
         font-size: 9px;
     }
@@ -8385,7 +8477,15 @@ ul.social-list .fill-true{
     }
 
     .whyYouShould__text span{
-        font-size: 1.6em;
+        font-size: 1.6em !important;
         line-height: 1.3em;
+    }
+    .block-title--mob span {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .block-title--begin {
+        font-size: 4.5em;
+        font-weight: 800;
     }
 }
