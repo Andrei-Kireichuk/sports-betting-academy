@@ -5285,7 +5285,7 @@ ul.social-list .fill-true{
     padding-bottom:10.125em;
     overflow:hidden
 }
-.index__screen-back{
+/*.index__screen-back{
     position:absolute;
     left:0;
     top:0;
@@ -5293,7 +5293,7 @@ ul.social-list .fill-true{
     height:100vh;
     z-index: -100;
     background:url("image/screenBack_bot.png") no-repeat center bottom -10.5em/100% auto,url("image/screenBack.png") no-repeat top/100% auto
-}
+}*/
 .index__content{
     position:relative;
     z-index:1
