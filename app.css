@@ -1105,8 +1105,13 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .title-main{
     font-size: 2.3em;
-    line-height:90px
+    line-height:1.3em
 }
+.title-sub-main {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
 @media (max-width:768px){
     .title-main{
         font-size:3.125em;
@@ -1475,9 +1480,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-size:1.6875em;
     line-height:1.2
 }
-.mobile .title-sub-main{
-    font-size:2em
-}
+
 .mobile .b-btn{
     padding:1.5625em 0
 }
@@ -8553,7 +8556,7 @@ ul.social-list .fill-true{
     }
     .footer__column:last-child {
         margin-right: auto;
-        margin-left: 12em;
+        margin-left: 14em;
     }   
     .footer__column:not(:last-child) {
         margin-right: auto;
