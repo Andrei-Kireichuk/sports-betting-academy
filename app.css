@@ -5285,15 +5285,14 @@ ul.social-list .fill-true{
     padding-bottom:10.125em;
     overflow:hidden
 }
-/*.index__screen-back{
+.index__screen-back{
     position:absolute;
     left:0;
     top:0;
     width:100%;
     height:100vh;
-    z-index: -100;
-    background:url("image/screenBack_bot.png") no-repeat center bottom -10.5em/100% auto,url("image/screenBack.png") no-repeat top/100% auto
-}*/
+    background: url("image/screenBack_bot.png") no-repeat center bottom -10.5em/100% auto,url("image/screenBack.png") no-repeat top/100% auto;
+}
 .index__content{
     position:relative;
     z-index:1
@@ -5394,11 +5393,7 @@ ul.social-list .fill-true{
 .mobile .index__page-title span{
     letter-spacing:-.034em
 }
-.mobile .index__screen-back{
-    height:39.125em;
-    top:0;
-    background:url("screenBack_bot.png") no-repeat center bottom -4.5em/100% auto,url("") no-repeat top/100% auto
-}
+
 .mobile .index__cup{
     width:24.375em;
     top:-21.5625em;
