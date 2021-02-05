@@ -1104,18 +1104,18 @@ h1,h2,h3,h4,h5,h6,p{
     font-size:1.125em
 }
 .title-main{
-    font-size:80px;
+    font-size: 2.3em;
     line-height:90px
 }
 @media (max-width:768px){
     .title-main{
         font-size:3.125em;
-        line-height:1.2
+        line-height:1.2;
     }
-}
+
 .title-sub-main{
-    font-size:32px;
-    font-weight:600
+    font-size: 2em;
+    font-weight:600;
 }
 .title-sub-main--timer {
     font-size: 1.2em;
@@ -1123,7 +1123,6 @@ h1,h2,h3,h4,h5,h6,p{
     padding-left: 2vw;
 }
 
-@media (max-width:768px){
     .title-sub-main{
         font-size:2.25em;
         line-height:1.2
@@ -1151,6 +1150,9 @@ h1,h2,h3,h4,h5,h6,p{
     font-size:1.3125em
 }
 .text-lg,.text-lg22{
+    font-size:1.25em
+}
+.text-lg23{
     font-size:1.25em
 }
 .text-md{
@@ -2045,7 +2047,7 @@ ul.social-list .fill-true{
       transform: translateX(-0em) skewX(-45deg);
     }
     to {
-      transform: translateX(28em) skewX(-45deg);
+      transform: translateX(35em) skewX(-45deg);
     }
   }
 
@@ -2073,15 +2075,15 @@ ul.social-list .fill-true{
     content:""
 }
 .main-button--light{
-    color:#000;
+    color:#fff;
     box-shadow:0 16px 16px rgba(0,0,0,.2)
 }
 .main-button--light:after{
-    background-color:hsla(0,0%,100%,.9)
+    background-color: #2770ab;
 }
 .main-button--light:hover:after{
     box-shadow:0 16px 16px rgba(0,0,0,.1);
-    background-color:#fff
+
 }
 .main-button span{
     position:relative;
@@ -8271,8 +8273,48 @@ ul.social-list .fill-true{
         font-size: 2em
     }
 }
+.text-lg23 {
+    font-size: 1.2em;
+}
 
 @media screen and (max-width: 1024px) {
+    .header {
+        display: inline;
+    }
+    .header__item {
+        margin-top: 2em;
+    }
+
+    .header__logo-block {
+        margin-right: 12em;
+    }
+    .index__first-screen {
+        padding-top: 6em;
+    }
+    .index__page-sub-title {
+        margin-bottom: 4em;
+    }
+    
+    .title-sub-main--timer {
+        margin-top: 4em;
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .timer__number {
+        font-size: 2em;     
+    }
+    .main-button{
+        height: 4.5em;
+        max-width:28em;
+    }
+    .main-button span {
+        font-size: 1.5em;
+    }
+
+    .index__promotion {
+        margin-top: 12em;
+    }
+    
     .footer__text span {
         font-size: 1.2em;
     }
@@ -8304,6 +8346,16 @@ ul.social-list .fill-true{
     }
     .text-lg22 {
         font-size: 2.5em;
+    }
+    .text-lg23 {
+        font-size: 1.5em;
+    }
+    .levels__title {
+        font-size: 1.5em;
+    }
+    .title-main {
+        font-size: 2.0em;
+        line-height: 1.5em;
     }
     
     .registration__desc {
@@ -8337,7 +8389,7 @@ ul.social-list .fill-true{
     }
 
     .title-sub-main {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .whyYouShould__text {
@@ -8431,9 +8483,58 @@ ul.social-list .fill-true{
 }
 
 @media screen and (max-width: 620px) {
+    .start__img {
+        width: 42%;
+    }
+    .block-title {
+        font-size: 1.5em;
+    }
+    .start__info {
+        max-width: 40.375em;
+        margin-left: 0;
+    }
+    .start__text span {
+        line-height: 1.3em;
+        font-size: 1.8em;
+        text-shadow: 1px 1px 2px #2770ab;
+        font-weight: 600;
+    }
+    .first-button {
+        margin-top: 12em;
+        margin-left: 12em;
+        height: 6em;
+        max-width: 40em;
+    }
+    .main-button {
+        height: 6em;
+        max-width: 40em;
+    }
+    .second-button {
+        margin-left: -15em;
+    }
+    @keyframes move-light {
+        from {
+            transform: translateX(-0em) skewX(-45deg);
+        }
+        to {
+            transform: translateX(50em) skewX(-45deg);
+        }
+    }
+
+    .main-button span {
+        font-size: 2em;
+    }
     .footer__year {
         font-size: 2em;
     }
+    .title-sub-main--timer {
+        font-size: 2.2em;
+        font-weight: 600;
+    }
+    .timer__number {
+        font-size: 2.5em;
+    }
+
     
     .footer__container {
         flex-direction: column;
@@ -8499,7 +8600,9 @@ ul.social-list .fill-true{
     .text-lg,.text-lg22 {
         font-size: 3em;
     }
-    
+    .text-lg23 {
+        font-size: 2em;
+    }
     .whatLearn__list {
         display: block;
         margin: 0 auto;
@@ -8575,6 +8678,10 @@ ul.social-list .fill-true{
     }
 
     .text-lg,.text-lg22{
+        font-size: 3.5em
+    }
+
+    .text-lg23{
         font-size: 3.5em
     }
     
